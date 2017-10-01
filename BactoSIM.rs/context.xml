@@ -1,0 +1,5 @@
+<context id="BactoSIM" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://repast.org/scenario/context">
+	<projection id="grid-space" type="grid" />
+	<projection id="continuous-space" type="continuous space" />
+  	<projection id="substrate" type="value layer" />  	  	
+</context>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<parameters>
+	<parameter name="randomSeed" displayName="Default Random Seed" type="int" defaultValue="__NULL__" />
+	<parameter name="doublingTime" displayName="Doubling Time (minutes)" defaultValue="60" isReadOnly="false" type="int" converter="repast.simphony.parameter.StringConverterFactory$IntConverter" />
+	<parameter name="P" displayName="P(gamma0)" defaultValue="0.2" isReadOnly="false" type="double" converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter" />
+	<parameter name="donorDensity" displayName="Donor density" defaultValue="0.1" isReadOnly="false" type="double" converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter" />
+	<parameter name="Cost" displayName="Infection cost" defaultValue="30" isReadOnly="false" type="int" converter="repast.simphony.parameter.StringConverterFactory$IntConverter" />
+</parameters>
