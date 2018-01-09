@@ -28,7 +28,7 @@ public class VEColi {
 
 	private double cov = 0.10;
 	private double cyclePoint = 0.70;
-	private double minlen = 0.8;		// Min capsule length
+	private double minlen = 0.6;		// Min capsule length
 	private double maxlen = 2.0;		// Max capsule length
 	
 	
@@ -98,6 +98,10 @@ public class VEColi {
 		return v + v * c;
 	}
 	
+	public void setHeading(double v) {
+		heading = v;
+	}
+	
 	public double getHeading() {
 		return heading;
 	}
@@ -133,7 +137,7 @@ public class VEColi {
 	 * @return true if the current Agent is a plasmid donor
 	 */
 	public boolean isD() {
-		return !isR();
+		return infected & infected0;
 	}
 	
 	/**
@@ -142,7 +146,7 @@ public class VEColi {
 	 * @return true if the current Agent is a plasmid Transconjugant
 	 */
 	public boolean isT() {
-		return isD() & infected0;
+		return infected & !infected0;
 	}
 	
 	/**
@@ -204,11 +208,12 @@ public class VEColi {
 	@SuppressWarnings("unchecked")
 	public void Division() {
 		if( divisionMass < mass) {
-			VEColi vecoli = new VEColi(heading + (-45 + 90 * Math.random()), mass - addNoise(mass/2,cov), infected0, infected);
+			VEColi vecoli = new VEColi(heading + (1 * Math.random()), mass - addNoise(mass/2,cov), infected0, infected);
 			mass = mass - vecoli.getMass();
 			if(context.add(vecoli)) {
 				NdPoint point = space.getLocation(this);
-				space.moveTo(vecoli,point.getX() + 1 * Math.sin(Math.toRadians(heading)), point.getY() + 1 * Math.cos(Math.toRadians(heading)),point.getZ());
+				double deltap= getLength()/2;
+				space.moveTo(vecoli,point.getX() + deltap * Math.cos(Math.toRadians((450-heading)%360)), point.getY() + deltap * Math.sin(Math.toRadians((450-heading)%360)),point.getZ());
 			}
 		}
 	}
@@ -220,6 +225,7 @@ public class VEColi {
 		if(!isD() & !isT()) return;
 		if(!pgamma) return;
 		if(mass < divisionMass * cyclePoint) return;
+		
 		GridPoint p = grid.getLocation(this);
 		VEColi vecoli = null;
 		

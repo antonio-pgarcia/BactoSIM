@@ -143,3 +143,303 @@ Caused by: java.lang.reflect.InvocationTargetException
 Caused by: java.lang.NullPointerException
 	at org.bactosim.haldane.CellEngine.step(CellEngine.java:20)
 	... 10 more
+WARN  [AWT-EventQueue-0] 2018-01-06 09:42:37,387 repast.simphony.scenario.ScenarioCPInitializer - Warning while parsing classpath: Empty or non-existent path 'C:\usr\source\repast-2.4.0\BactoSIM\lib'.
+WARN  [AWT-EventQueue-0] 2018-01-06 09:42:37,504 repast.simphony.scenario.ScenarioLoader - While initializing classpath: Empty or non-existent path 'C:\usr\source\repast-2.4.0\BactoSIM\lib'.
+FATAL [Thread-7] 2018-01-08 00:01:20,071 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (1.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at org.bactosim.haldane.EnginePhy$$FastClassByCGLIB$$eea68e6c.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.ClassCastException: org.bactosim.haldane.EnginePhy cannot be cast to org.bactosim.haldane.VEColi
+	at org.bactosim.haldane.EnginePhy.distance(EnginePhy.java:67)
+	at org.bactosim.haldane.EnginePhy.step(EnginePhy.java:48)
+	... 10 more
+FATAL [Thread-7] 2018-01-08 15:00:11,042 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (1.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at org.bactosim.haldane.EnginePhy$$FastClassByCGLIB$$eea68e6c.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.ClassCastException: org.bactosim.haldane.EnginePhy cannot be cast to org.bactosim.haldane.VEColi
+	at org.bactosim.haldane.ColonyExpansion.Relaxation(EnginePhy.java:258)
+	at org.bactosim.haldane.EnginePhy.RingVisitor(EnginePhy.java:81)
+	at org.bactosim.haldane.EnginePhy.step(EnginePhy.java:66)
+	... 10 more
+FATAL [Thread-7] 2018-01-08 17:07:20,648 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (11.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at org.bactosim.haldane.EnginePhy$$FastClassByCGLIB$$eea68e6c.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.ClassCastException: org.bactosim.haldane.EngineDiffusion cannot be cast to org.bactosim.haldane.VEColi
+	at org.bactosim.haldane.ColonyExpansion.Relaxation(EnginePhy.java:290)
+	at org.bactosim.haldane.EnginePhy.RingVisitor(EnginePhy.java:82)
+	at org.bactosim.haldane.EnginePhy.step(EnginePhy.java:67)
+	... 10 more
+FATAL [Thread-7] 2018-01-08 17:40:19,947 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (1.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at org.bactosim.haldane.EnginePhy$$FastClassByCGLIB$$eea68e6c.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.ClassCastException: org.bactosim.haldane.EnginePhy cannot be cast to org.bactosim.haldane.VEColi
+	at org.bactosim.haldane.ColonyExpansion.Relaxation(EnginePhy.java:290)
+	at org.bactosim.haldane.EnginePhy.RingVisitor(EnginePhy.java:82)
+	at org.bactosim.haldane.EnginePhy.step(EnginePhy.java:67)
+	... 10 more
+FATAL [Thread-7] 2018-01-08 17:42:05,272 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (11.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at org.bactosim.haldane.EnginePhy$$FastClassByCGLIB$$eea68e6c.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.ClassCastException: org.bactosim.haldane.EnginePhy cannot be cast to org.bactosim.haldane.VEColi
+	at org.bactosim.haldane.ColonyExpansion.Relaxation(EnginePhy.java:290)
+	at org.bactosim.haldane.EnginePhy.RingVisitor(EnginePhy.java:82)
+	at org.bactosim.haldane.EnginePhy.step(EnginePhy.java:67)
+	... 10 more
+FATAL [Thread-7] 2018-01-08 18:36:10,468 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (6.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at org.bactosim.haldane.VEColi$$FastClassByCGLIB$$fc8b16ab.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: Object '1' must be added to the space's context before it can be moved
+	at repast.simphony.space.continuous.AbstractContinuousSpace.doMove(AbstractContinuousSpace.java:129)
+	at repast.simphony.space.continuous.AbstractContinuousSpace.moveTo(AbstractContinuousSpace.java:121)
+	at org.bactosim.haldane.VEColi.Division(VEColi.java:212)
+	at org.bactosim.haldane.VEColi.step(VEColi.java:249)
+	... 10 more
+FATAL [Thread-7] 2018-01-08 23:11:55,997 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (1.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at org.bactosim.haldane.EnginePhy$$FastClassByCGLIB$$eea68e6c.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: Displacement matrix has different number of dimensions than space
+	at repast.simphony.space.continuous.AbstractContinuousSpace.moveByVector(AbstractContinuousSpace.java:323)
+	at org.bactosim.haldane.ColonyExpansion.Relaxation(EnginePhy.java:283)
+	at org.bactosim.haldane.EnginePhy.RingVisitor(EnginePhy.java:82)
+	at org.bactosim.haldane.EnginePhy.step(EnginePhy.java:67)
+	... 10 more
+ERROR [AWT-EventQueue-0] 2018-01-09 10:59:33,859 repast.simphony.ui.RSApplication - Error while initializing simulation
+org.apache.commons.math3.exception.DimensionMismatchException: 2 != 3
+	at org.apache.commons.math3.geometry.euclidean.threed.Vector3D.<init>(Vector3D.java:109)
+	at org.bactosim.haldane.ContextInitializer.build(ContextInitializer.java:81)
+	at repast.simphony.dataLoader.engine.ClassNameContextBuilder.build(ClassNameContextBuilder.java:41)
+	at repast.simphony.dataLoader.engine.DataLoaderControllerAction.runInitialize(DataLoaderControllerAction.java:48)
+	at repast.simphony.engine.controller.DefaultController$2.visit(DefaultController.java:214)
+	at repast.simphony.engine.controller.DefaultController$2.visit(DefaultController.java:1)
+	at repast.simphony.util.collections.NaryTree.preOrderTraverals(NaryTree.java:292)
+	at repast.simphony.util.collections.NaryTree.preOrderTraverals(NaryTree.java:295)
+	at repast.simphony.util.collections.NaryTree.preOrderTraverals(NaryTree.java:295)
+	at repast.simphony.util.collections.NaryTree.preOrderTraversal(NaryTree.java:288)
+	at repast.simphony.engine.controller.DefaultController.runInitialize(DefaultController.java:212)
+	at repast.simphony.engine.controller.DefaultController.runInitialize(DefaultController.java:383)
+	at repast.simphony.ui.RSApplication.initSim(RSApplication.java:157)
+	at repast.simphony.ui.action.InitRun.actionPerformed(InitRun.java:17)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.AWTEventMulticaster.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+ERROR [AWT-EventQueue-0] 2018-01-09 11:00:01,404 repast.simphony.ui.RSApplication - Error while initializing simulation
+org.apache.commons.math3.exception.DimensionMismatchException: 2 != 3
+	at org.apache.commons.math3.geometry.euclidean.threed.Vector3D.<init>(Vector3D.java:109)
+	at org.bactosim.haldane.ContextInitializer.build(ContextInitializer.java:81)
+	at repast.simphony.dataLoader.engine.ClassNameContextBuilder.build(ClassNameContextBuilder.java:41)
+	at repast.simphony.dataLoader.engine.DataLoaderControllerAction.runInitialize(DataLoaderControllerAction.java:48)
+	at repast.simphony.engine.controller.DefaultController$2.visit(DefaultController.java:214)
+	at repast.simphony.engine.controller.DefaultController$2.visit(DefaultController.java:1)
+	at repast.simphony.util.collections.NaryTree.preOrderTraverals(NaryTree.java:292)
+	at repast.simphony.util.collections.NaryTree.preOrderTraverals(NaryTree.java:295)
+	at repast.simphony.util.collections.NaryTree.preOrderTraverals(NaryTree.java:295)
+	at repast.simphony.util.collections.NaryTree.preOrderTraversal(NaryTree.java:288)
+	at repast.simphony.engine.controller.DefaultController.runInitialize(DefaultController.java:212)
+	at repast.simphony.engine.controller.DefaultController.runInitialize(DefaultController.java:383)
+	at repast.simphony.ui.RSApplication.initSim(RSApplication.java:157)
+	at repast.simphony.ui.action.InitRun.actionPerformed(InitRun.java:17)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.AWTEventMulticaster.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+FATAL [Thread-7] 2018-01-09 22:19:31,550 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (11.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at org.bactosim.haldane.EnginePhy$$FastClassByCGLIB$$eea68e6c.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: org.apache.commons.math3.exception.MathArithmeticException: cannot normalize a zero norm vector
+	at org.apache.commons.math3.geometry.euclidean.threed.Vector3D.normalize(Vector3D.java:299)
+	at org.bactosim.haldane.ColonyExpansion.Relaxation(EnginePhy.java:286)
+	at org.bactosim.haldane.EnginePhy.RingVisitor(EnginePhy.java:82)
+	at org.bactosim.haldane.EnginePhy.step(EnginePhy.java:67)
+	... 10 more
+FATAL [Thread-7] 2018-01-09 22:20:28,620 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (11.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at org.bactosim.haldane.EnginePhy$$FastClassByCGLIB$$eea68e6c.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: org.apache.commons.math3.exception.MathArithmeticException: cannot normalize a zero norm vector
+	at org.apache.commons.math3.geometry.euclidean.threed.Vector3D.normalize(Vector3D.java:299)
+	at org.bactosim.haldane.ColonyExpansion.Relaxation(EnginePhy.java:288)
+	at org.bactosim.haldane.EnginePhy.RingVisitor(EnginePhy.java:82)
+	at org.bactosim.haldane.EnginePhy.step(EnginePhy.java:67)
+	... 10 more
